@@ -8,6 +8,14 @@ execution tracer that is built on top of DynamoRIO. There are future plans for a
 PIN execution tracer and different conversion tools to convert traces obtained
 from other tools to peekaboo format.
 
+## BUILD
+
+sh configure.sh
+
+## RUN
+
+sh run.sh [command]
+
 ## Architectures
 ### Currently Support
 AMD64, AARCH64, X86
