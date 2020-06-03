@@ -54,6 +54,8 @@ enum ARCH {
 
 // Misc functions
 int create_folder(char *name, char *output, uint32_t max_size);
+// end
+
 //-----common structure declaration-----------------------
 typedef struct {
 	uint32_t arch;
@@ -137,20 +139,5 @@ uint64_t get_addr(size_t id, peekaboo_trace_t *trace);
 size_t get_num_insn(peekaboo_trace_t *);
 peekaboo_insn_t *get_peekaboo_insn(size_t id, peekaboo_trace_t *trace);
 void regfile_pp(peekaboo_insn_t *insn);
-void popluate_metafile(peekaboo_trace_t *trace, int arch);
-peekaboo_trace_t *create_new_trace(char* trace_name, int arch);
-peekaboo_insn_t *create_new_insn(char *arch);
-uint8_t *get_bytes(char *rawbytes_str);
-void fill_insn(peekaboo_insn_t *insn, uint64_t pc, uint8_t *rawbytes, size_t rawbytes_num,  size_t mem_num, uint64_t *memory_addr, uint64_t *memory, uint32_t *mem_valid_bit, uint32_t *mem_status);
-void insert_insn(peekaboo_trace_t *trace, peekaboo_insn_t *insn, int arch);
-
-void pretty_print_addr_amd64(uint64_t pc);
-void print_disa_amd64(uint8_t *rawbytes, size_t size, uint64_t rawbytes_addr);
-void pretty_print_rawbytes_amd64(uint8_t *rawbytes, size_t size, uint64_t rawbytes_addr);
-void pretty_print(peekaboo_insn_t *insn);
-void yellow();
-void red();
-void blue();
-void reset();
 
 #endif

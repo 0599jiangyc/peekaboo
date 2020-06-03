@@ -119,7 +119,6 @@ typedef struct regfile_amd64{
 } regfile_amd64_t;
 
 void amd64_regfile_pp(regfile_amd64_t *regfile);
-void pretty_print_registers_amd64(regfile_amd64_t *regfile);
 /* End of Regfile */
 
 #endif

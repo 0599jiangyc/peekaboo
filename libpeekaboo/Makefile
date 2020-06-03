@@ -29,4 +29,3 @@ x86.o: $(ARCH_DIR)/x86.c $(ARCH_DIR)/x86.h
 
 clean:
 	rm -f *.o *.a *.gch $(ARCH_DIR)/*.o $(ARCH_DIR)/*.gch
-
