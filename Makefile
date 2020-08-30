@@ -1,4 +1,4 @@
-PROG = read_trace write_trace cut_trace
+PROG = read_trace #write_trace cut_trace
 PROJ_HOME = .
 IDIR_PEEKABOO = $(PROJ_HOME)/libpeekaboo
 LDIR_PEEKABOO = $(PROJ_HOME)/libpeekaboo
